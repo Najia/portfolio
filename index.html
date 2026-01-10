@@ -121,7 +121,7 @@
           <a href="#about" class="nav__link">About</a>
         </li>
         <li class="nav__item">
-          <a href="#projects" class="nav__link">Projects</a>
+          <a href="#clients" class="nav__link">Clients</a>
         </li>
         <li class="nav__item">
           <a href="#contact" class="nav__link">Contact</a>
@@ -167,7 +167,7 @@
           Building high-performing teams and delivering strategic technology solutions.
         </p>
         <div class="hero__cta">
-          <a href="#projects" class="btn btn--primary">
+          <a href="#clients" class="btn btn--primary">
             View My Work
             <svg class="btn__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -286,232 +286,51 @@
       </div>
     </section>
 
-    <section id="projects" class="section projects">
+    <section id="clients" class="section clients">
       <div class="container">
-        <header class="projects__header" data-animate="fade-up">
-          <h2 class="section__title">Featured Projects</h2>
-          <p class="projects__subtitle">A selection of my recent work</p>
+        <header class="clients__header" data-animate="fade-up">
+          <h2 class="section__title">Trusted Clients</h2>
+          <p class="clients__subtitle">Organizations I've partnered with to deliver IT staffing excellence</p>
         </header>
 
-        <!-- Filter Buttons -->
-        <div class="projects__filters" role="tablist" aria-label="Filter projects" data-animate="fade-up" data-delay="100">
-          <button class="filter-btn filter-btn--active" data-filter="all" role="tab" aria-selected="true">
-            All
-          </button>
-          <button class="filter-btn" data-filter="frontend" role="tab" aria-selected="false">
-            Frontend
-          </button>
-          <button class="filter-btn" data-filter="fullstack" role="tab" aria-selected="false">
-            Full Stack
-          </button>
-          <button class="filter-btn" data-filter="ui" role="tab" aria-selected="false">
-            UI/UX
-          </button>
-        </div>
-
-        <!-- Projects Grid -->
-        <div class="projects__grid stagger-children" id="projects-grid">
-          <!-- Project 1 -->
-          <article class="project-card" data-category="frontend" data-animate="fade-up">
-            <div class="project-card__image">
-              <img src="https://placehold.co/600x400/3b82f6/ffffff?text=Project+1" alt="E-commerce Dashboard" loading="lazy">
-              <div class="project-card__overlay">
-                <div class="project-card__links">
-                  <a href="#" class="project-card__link" aria-label="View live demo">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                      <polyline points="15 3 21 3 21 9"></polyline>
-                      <line x1="10" y1="14" x2="21" y2="3"></line>
-                    </svg>
-                  </a>
-                  <a href="#" class="project-card__link" aria-label="View source code">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                    </svg>
-                  </a>
-                </div>
-              </div>
+        <!-- Clients Grid -->
+        <div class="clients__grid" data-animate="fade-up" data-delay="100">
+          <!-- Client 1: Saudi Business Machines -->
+          <article class="client-card">
+            <div class="client-card__logo">
+              <img src="https://logo.clearbit.com/sbm.com.sa" alt="Saudi Business Machines logo" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="client-card__fallback" style="display:none;">SBM</div>
             </div>
-            <div class="project-card__content">
-              <h3 class="project-card__title">E-commerce Dashboard</h3>
-              <p class="project-card__description">
-                A modern dashboard for managing online store analytics, inventory, and orders with real-time updates.
-              </p>
-              <div class="project-card__tags">
-                <span class="tag">React</span>
-                <span class="tag">TypeScript</span>
-                <span class="tag">Tailwind</span>
-              </div>
+            <div class="client-card__content">
+              <h3 class="client-card__name">Saudi Business Machines</h3>
+              <p class="client-card__description">IBM's exclusive representative in Saudi Arabia, providing enterprise IT solutions and services.</p>
+              <span class="client-card__industry">Technology & IT Services</span>
             </div>
           </article>
 
-          <!-- Project 2 -->
-          <article class="project-card" data-category="fullstack" data-animate="fade-up">
-            <div class="project-card__image">
-              <img src="https://placehold.co/600x400/a855f7/ffffff?text=Project+2" alt="Task Management App" loading="lazy">
-              <div class="project-card__overlay">
-                <div class="project-card__links">
-                  <a href="#" class="project-card__link" aria-label="View live demo">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                      <polyline points="15 3 21 3 21 9"></polyline>
-                      <line x1="10" y1="14" x2="21" y2="3"></line>
-                    </svg>
-                  </a>
-                  <a href="#" class="project-card__link" aria-label="View source code">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                    </svg>
-                  </a>
-                </div>
-              </div>
+          <!-- Client 2: Arab Bank -->
+          <article class="client-card">
+            <div class="client-card__logo">
+              <img src="https://logo.clearbit.com/arabbank.com" alt="Arab Bank logo" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="client-card__fallback" style="display:none;">AB</div>
             </div>
-            <div class="project-card__content">
-              <h3 class="project-card__title">Task Management App</h3>
-              <p class="project-card__description">
-                Full-stack productivity app with drag-and-drop boards, team collaboration, and deadline tracking.
-              </p>
-              <div class="project-card__tags">
-                <span class="tag">Node.js</span>
-                <span class="tag">MongoDB</span>
-                <span class="tag">Socket.io</span>
-              </div>
+            <div class="client-card__content">
+              <h3 class="client-card__name">Arab Bank</h3>
+              <p class="client-card__description">One of the largest financial institutions in the Middle East with a global banking network.</p>
+              <span class="client-card__industry">Banking & Finance</span>
             </div>
           </article>
 
-          <!-- Project 3 -->
-          <article class="project-card" data-category="ui" data-animate="fade-up">
-            <div class="project-card__image">
-              <img src="https://placehold.co/600x400/10b981/ffffff?text=Project+3" alt="Finance App Design" loading="lazy">
-              <div class="project-card__overlay">
-                <div class="project-card__links">
-                  <a href="#" class="project-card__link" aria-label="View live demo">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                      <polyline points="15 3 21 3 21 9"></polyline>
-                      <line x1="10" y1="14" x2="21" y2="3"></line>
-                    </svg>
-                  </a>
-                  <a href="#" class="project-card__link" aria-label="View source code">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                    </svg>
-                  </a>
-                </div>
-              </div>
+          <!-- Client 3: Mobily -->
+          <article class="client-card">
+            <div class="client-card__logo">
+              <img src="https://logo.clearbit.com/mobily.com.sa" alt="Mobily logo" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="client-card__fallback" style="display:none;">M</div>
             </div>
-            <div class="project-card__content">
-              <h3 class="project-card__title">Finance App Design</h3>
-              <p class="project-card__description">
-                Mobile-first UI design for a personal finance app with expense tracking and budgeting features.
-              </p>
-              <div class="project-card__tags">
-                <span class="tag">Figma</span>
-                <span class="tag">Prototyping</span>
-                <span class="tag">Mobile</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Project 4 -->
-          <article class="project-card" data-category="frontend" data-animate="fade-up">
-            <div class="project-card__image">
-              <img src="https://placehold.co/600x400/f59e0b/ffffff?text=Project+4" alt="Weather Application" loading="lazy">
-              <div class="project-card__overlay">
-                <div class="project-card__links">
-                  <a href="#" class="project-card__link" aria-label="View live demo">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                      <polyline points="15 3 21 3 21 9"></polyline>
-                      <line x1="10" y1="14" x2="21" y2="3"></line>
-                    </svg>
-                  </a>
-                  <a href="#" class="project-card__link" aria-label="View source code">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="project-card__content">
-              <h3 class="project-card__title">Weather Application</h3>
-              <p class="project-card__description">
-                Beautiful weather app with location detection, 7-day forecasts, and animated weather conditions.
-              </p>
-              <div class="project-card__tags">
-                <span class="tag">JavaScript</span>
-                <span class="tag">API</span>
-                <span class="tag">CSS</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Project 5 -->
-          <article class="project-card" data-category="fullstack" data-animate="fade-up">
-            <div class="project-card__image">
-              <img src="https://placehold.co/600x400/ef4444/ffffff?text=Project+5" alt="Social Media Platform" loading="lazy">
-              <div class="project-card__overlay">
-                <div class="project-card__links">
-                  <a href="#" class="project-card__link" aria-label="View live demo">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                      <polyline points="15 3 21 3 21 9"></polyline>
-                      <line x1="10" y1="14" x2="21" y2="3"></line>
-                    </svg>
-                  </a>
-                  <a href="#" class="project-card__link" aria-label="View source code">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="project-card__content">
-              <h3 class="project-card__title">Social Media Platform</h3>
-              <p class="project-card__description">
-                Feature-rich social platform with real-time messaging, post sharing, and user authentication.
-              </p>
-              <div class="project-card__tags">
-                <span class="tag">React</span>
-                <span class="tag">Firebase</span>
-                <span class="tag">Redux</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Project 6 -->
-          <article class="project-card" data-category="ui" data-animate="fade-up">
-            <div class="project-card__image">
-              <img src="https://placehold.co/600x400/8b5cf6/ffffff?text=Project+6" alt="Design System" loading="lazy">
-              <div class="project-card__overlay">
-                <div class="project-card__links">
-                  <a href="#" class="project-card__link" aria-label="View live demo">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                      <polyline points="15 3 21 3 21 9"></polyline>
-                      <line x1="10" y1="14" x2="21" y2="3"></line>
-                    </svg>
-                  </a>
-                  <a href="#" class="project-card__link" aria-label="View source code">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="project-card__content">
-              <h3 class="project-card__title">Design System</h3>
-              <p class="project-card__description">
-                Comprehensive design system with reusable components, documentation, and accessibility guidelines.
-              </p>
-              <div class="project-card__tags">
-                <span class="tag">Storybook</span>
-                <span class="tag">Design Tokens</span>
-                <span class="tag">A11y</span>
-              </div>
+            <div class="client-card__content">
+              <h3 class="client-card__name">Mobily</h3>
+              <p class="client-card__description">Saudi Arabia's leading telecommunications company providing mobile and internet services.</p>
+              <span class="client-card__industry">Telecommunications</span>
             </div>
           </article>
         </div>
