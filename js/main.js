@@ -180,11 +180,11 @@
 
   if (typingElement) {
     const phrases = [
-      'web applications',
-      'responsive websites',
-      'user interfaces',
-      'digital experiences',
-      'modern solutions'
+      'IT solutions',
+      'tech talent teams',
+      'staffing strategies',
+      'workforce success',
+      'career connections'
     ];
 
     const config = {

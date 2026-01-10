@@ -54,20 +54,20 @@
 
   <text x="340" y="320" font-family="system-ui, -apple-system, sans-serif" font-size="52" fill="#f1f5f9" font-weight="bold">Najia Khurshid</text>
 
-  <text x="340" y="380" font-family="system-ui, -apple-system, sans-serif" font-size="28" fill="#94a3b8">Web Developer &amp; Frontend Engineer</text>
+  <text x="340" y="380" font-family="system-ui, -apple-system, sans-serif" font-size="28" fill="#94a3b8">Director of IT Services &amp; Recruitment</text>
 
   <!-- Tech tags -->
-  <rect x="340" y="410" width="90" height="32" rx="16" fill="#3b82f6" fill-opacity="0.2"/>
-  <text x="385" y="432" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#60a5fa" text-anchor="middle" font-weight="500">React</text>
+  <rect x="340" y="410" width="100" height="32" rx="16" fill="#3b82f6" fill-opacity="0.2"/>
+  <text x="390" y="432" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#60a5fa" text-anchor="middle" font-weight="500">IT Staffing</text>
 
-  <rect x="445" y="410" width="110" height="32" rx="16" fill="#3b82f6" fill-opacity="0.2"/>
-  <text x="500" y="432" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#60a5fa" text-anchor="middle" font-weight="500">JavaScript</text>
+  <rect x="455" y="410" width="140" height="32" rx="16" fill="#3b82f6" fill-opacity="0.2"/>
+  <text x="525" y="432" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#60a5fa" text-anchor="middle" font-weight="500">Project Management</text>
 
-  <rect x="570" y="410" width="90" height="32" rx="16" fill="#3b82f6" fill-opacity="0.2"/>
-  <text x="615" y="432" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#60a5fa" text-anchor="middle" font-weight="500">Node.js</text>
+  <rect x="610" y="410" width="130" height="32" rx="16" fill="#3b82f6" fill-opacity="0.2"/>
+  <text x="675" y="432" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#60a5fa" text-anchor="middle" font-weight="500">Talent Acquisition</text>
 
-  <rect x="675" y="410" width="100" height="32" rx="16" fill="#3b82f6" fill-opacity="0.2"/>
-  <text x="725" y="432" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#60a5fa" text-anchor="middle" font-weight="500">TypeScript</text>
+  <rect x="755" y="410" width="110" height="32" rx="16" fill="#3b82f6" fill-opacity="0.2"/>
+  <text x="810" y="432" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#60a5fa" text-anchor="middle" font-weight="500">Leadership</text>
 
   <!-- Website URL -->
   <text x="1050" y="460" font-family="system-ui, -apple-system, sans-serif" font-size="18" fill="#64748b" text-anchor="end">yourname.dev</text>
