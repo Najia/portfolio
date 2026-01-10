@@ -47,12 +47,12 @@
 
   <!-- Profile circle placeholder -->
   <circle cx="220" cy="315" r="80" fill="url(#primaryGradient)"/>
-  <text x="220" y="335" font-family="system-ui, -apple-system, sans-serif" font-size="48" font-weight="bold" fill="white" text-anchor="middle">YN</text>
+  <text x="220" y="335" font-family="system-ui, -apple-system, sans-serif" font-size="48" font-weight="bold" fill="white" text-anchor="middle">NK</text>
 
   <!-- Text content -->
   <text x="340" y="260" font-family="system-ui, -apple-system, sans-serif" font-size="20" fill="#94a3b8" font-weight="500">PORTFOLIO</text>
 
-  <text x="340" y="320" font-family="system-ui, -apple-system, sans-serif" font-size="52" fill="#f1f5f9" font-weight="bold">Your Name</text>
+  <text x="340" y="320" font-family="system-ui, -apple-system, sans-serif" font-size="52" fill="#f1f5f9" font-weight="bold">Najia Khurshid</text>
 
   <text x="340" y="380" font-family="system-ui, -apple-system, sans-serif" font-size="28" fill="#94a3b8">Web Developer &amp; Frontend Engineer</text>
 
