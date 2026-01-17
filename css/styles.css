@@ -511,6 +511,9 @@ body {
   z-index: 1;
   text-align: center;
   max-width: 800px;
+}
+
+.js-enabled .hero__content {
   animation: fadeInUp 0.8s ease-out;
 }
 
@@ -530,6 +533,9 @@ body {
   font-weight: var(--font-medium);
   color: var(--color-primary-500);
   margin-bottom: var(--space-2);
+}
+
+.js-enabled .hero__greeting {
   animation: fadeInUp 0.8s ease-out 0.1s both;
 }
 
@@ -539,6 +545,9 @@ body {
   color: var(--color-text);
   line-height: var(--leading-tight);
   margin-bottom: var(--space-3);
+}
+
+.js-enabled .hero__name {
   animation: fadeInUp 0.8s ease-out 0.2s both;
 }
 
@@ -560,6 +569,9 @@ body {
   color: var(--color-text-muted);
   margin-bottom: var(--space-5);
   min-height: 2em;
+}
+
+.js-enabled .hero__title {
   animation: fadeInUp 0.8s ease-out 0.3s both;
 }
 
@@ -596,6 +608,9 @@ body {
   line-height: var(--leading-relaxed);
   max-width: 600px;
   margin: 0 auto var(--space-6);
+}
+
+.js-enabled .hero__description {
   animation: fadeInUp 0.8s ease-out 0.4s both;
 }
 
@@ -612,6 +627,9 @@ body {
   gap: var(--space-3);
   justify-content: center;
   margin-bottom: var(--space-10);
+}
+
+.js-enabled .hero__cta {
   animation: fadeInUp 0.8s ease-out 0.5s both;
 }
 
@@ -696,6 +714,9 @@ body {
   bottom: var(--space-6);
   left: 50%;
   transform: translateX(-50%);
+}
+
+.js-enabled .hero__scroll {
   animation: fadeInUp 0.8s ease-out 0.7s both;
 }
 
@@ -1343,14 +1364,20 @@ a.contact__info-value:hover {
    Scroll Animations
    ========================================================================== */
 
-/* Base state - hidden */
+/* Base state - visible by default for no-JS fallback */
 [data-animate] {
-  opacity: 0;
+  opacity: 1;
+  transform: none;
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
+/* When JS is enabled, hide elements for animation */
+.js-enabled [data-animate] {
+  opacity: 0;
+}
+
 /* Fade Up */
-[data-animate="fade-up"] {
+.js-enabled [data-animate="fade-up"] {
   transform: translateY(40px);
 }
 
@@ -1360,7 +1387,7 @@ a.contact__info-value:hover {
 }
 
 /* Fade Down */
-[data-animate="fade-down"] {
+.js-enabled [data-animate="fade-down"] {
   transform: translateY(-40px);
 }
 
@@ -1370,7 +1397,7 @@ a.contact__info-value:hover {
 }
 
 /* Fade Left */
-[data-animate="fade-left"] {
+.js-enabled [data-animate="fade-left"] {
   transform: translateX(-40px);
 }
 
@@ -1380,7 +1407,7 @@ a.contact__info-value:hover {
 }
 
 /* Fade Right */
-[data-animate="fade-right"] {
+.js-enabled [data-animate="fade-right"] {
   transform: translateX(40px);
 }
 
@@ -1390,7 +1417,7 @@ a.contact__info-value:hover {
 }
 
 /* Scale Up */
-[data-animate="scale-up"] {
+.js-enabled [data-animate="scale-up"] {
   transform: scale(0.9);
 }
 
@@ -1400,7 +1427,7 @@ a.contact__info-value:hover {
 }
 
 /* Fade In */
-[data-animate="fade-in"] {
+.js-enabled [data-animate="fade-in"] {
   transform: none;
 }
 

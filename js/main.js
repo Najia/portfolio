@@ -11,6 +11,14 @@
   'use strict';
 
   // ==========================================================================
+  // Enable JS-dependent features
+  // ==========================================================================
+
+  // Add js-enabled class for progressive enhancement
+  // This enables CSS animations only when JS is available
+  document.documentElement.classList.add('js-enabled');
+
+  // ==========================================================================
   // DOM Elements
   // ==========================================================================
 
