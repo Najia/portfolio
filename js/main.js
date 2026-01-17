@@ -26,20 +26,62 @@
   // Mobile Menu
   // ==========================================================================
 
+  // Get focusable elements within menu for focus trap
+  function getFocusableElements() {
+    return navMenu.querySelectorAll('a[href], button:not([disabled])');
+  }
+
+  // Focus trap handler for mobile menu
+  function handleFocusTrap(e) {
+    if (e.key !== 'Tab') return;
+
+    const focusables = getFocusableElements();
+    const firstFocusable = focusables[0];
+    const lastFocusable = focusables[focusables.length - 1];
+
+    if (e.shiftKey) {
+      // Shift + Tab: if on first element, wrap to last
+      if (document.activeElement === firstFocusable) {
+        e.preventDefault();
+        lastFocusable.focus();
+      }
+    } else {
+      // Tab: if on last element, wrap to first
+      if (document.activeElement === lastFocusable) {
+        e.preventDefault();
+        firstFocusable.focus();
+      }
+    }
+  }
+
   function openMenu() {
     navToggle.classList.add('nav__toggle--active');
     navToggle.setAttribute('aria-expanded', 'true');
     navMenu.classList.add('nav__menu--open');
+    navMenu.setAttribute('aria-hidden', 'false');
     navOverlay.classList.add('nav__overlay--visible');
     document.body.style.overflow = 'hidden';
+
+    // Add focus trap
+    navMenu.addEventListener('keydown', handleFocusTrap);
+
+    // Focus first menu item
+    const firstLink = navMenu.querySelector('.nav__link');
+    if (firstLink) {
+      firstLink.focus();
+    }
   }
 
   function closeMenu() {
     navToggle.classList.remove('nav__toggle--active');
     navToggle.setAttribute('aria-expanded', 'false');
     navMenu.classList.remove('nav__menu--open');
+    navMenu.setAttribute('aria-hidden', 'true');
     navOverlay.classList.remove('nav__overlay--visible');
     document.body.style.overflow = '';
+
+    // Remove focus trap
+    navMenu.removeEventListener('keydown', handleFocusTrap);
   }
 
   function toggleMenu() {
@@ -74,12 +116,27 @@
     }
   });
 
-  // Close menu on resize to desktop
+  // Handle menu state on resize
   window.addEventListener('resize', () => {
     if (window.innerWidth >= 768) {
-      closeMenu();
+      // On desktop, menu is always visible - remove aria-hidden
+      navMenu.removeAttribute('aria-hidden');
+      navToggle.classList.remove('nav__toggle--active');
+      navToggle.setAttribute('aria-expanded', 'false');
+      navMenu.classList.remove('nav__menu--open');
+      navOverlay.classList.remove('nav__overlay--visible');
+      document.body.style.overflow = '';
+      navMenu.removeEventListener('keydown', handleFocusTrap);
+    } else if (!navMenu.classList.contains('nav__menu--open')) {
+      // On mobile with menu closed, ensure aria-hidden is set
+      navMenu.setAttribute('aria-hidden', 'true');
     }
   });
+
+  // Set initial aria-hidden state based on viewport
+  if (window.innerWidth >= 768) {
+    navMenu.removeAttribute('aria-hidden');
+  }
 
   // ==========================================================================
   // Sticky Header

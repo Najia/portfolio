@@ -102,6 +102,9 @@
   </script>
 </head>
 <body>
+  <!-- Skip Link for Accessibility -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+
   <!-- Navigation -->
   <header class="header" id="header">
     <nav class="nav container">
@@ -113,7 +116,7 @@
         <span class="nav__toggle-bar"></span>
       </button>
 
-      <ul class="nav__menu" id="nav-menu">
+      <ul class="nav__menu" id="nav-menu" aria-hidden="true">
         <li class="nav__item">
           <a href="#home" class="nav__link nav__link--active">Home</a>
         </li>
@@ -128,11 +131,11 @@
         </li>
         <li class="nav__item nav__item--cta">
           <button class="nav__theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
-            <svg class="nav__theme-icon nav__theme-icon--light" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg class="nav__theme-icon nav__theme-icon--light" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
               <circle cx="12" cy="12" r="5"></circle>
               <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path>
             </svg>
-            <svg class="nav__theme-icon nav__theme-icon--dark" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg class="nav__theme-icon nav__theme-icon--dark" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
               <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
             </svg>
           </button>
@@ -144,7 +147,7 @@
   </header>
 
   <!-- Main Content (placeholder sections for scroll) -->
-  <main>
+  <main id="main">
     <section id="home" class="hero">
       <!-- Animated background -->
       <div class="hero__bg">
@@ -157,11 +160,12 @@
       <div class="hero__content container">
         <p class="hero__greeting">Hello, I'm</p>
         <h1 class="hero__name">Najia Khurshid</h1>
-        <h2 class="hero__title">
+        <p class="hero__title">
           <span class="hero__title-static">I build </span>
-          <span class="hero__title-typing" id="typing-text"></span>
+          <span class="hero__title-typing" id="typing-text" aria-hidden="true"></span>
           <span class="hero__cursor" aria-hidden="true">|</span>
-        </h2>
+          <span class="sr-only">IT solutions, tech talent teams, staffing strategies, workforce success, and career connections</span>
+        </p>
         <p class="hero__description">
           Director of IT Services connecting top talent with exceptional opportunities.
           Building high-performing teams and delivering strategic technology solutions.
@@ -169,7 +173,7 @@
         <div class="hero__cta">
           <a href="#clients" class="btn btn--primary">
             View My Work
-            <svg class="btn__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg class="btn__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
               <path d="M5 12h14M12 5l7 7-7 7"></path>
             </svg>
           </a>
@@ -181,7 +185,7 @@
           <a href="#about" class="hero__scroll-link" aria-label="Scroll to about section">
             <span class="hero__scroll-text">Scroll</span>
             <span class="hero__scroll-icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                 <path d="M12 5v14M5 12l7 7 7-7"></path>
               </svg>
             </span>
@@ -224,37 +228,37 @@
               <h3 class="about__skills-title">What I specialize in</h3>
               <ul class="about__skills-list">
                 <li class="about__skill">
-                  <svg class="about__skill-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <svg class="about__skill-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                     <polyline points="20 6 9 17 4 12"></polyline>
                   </svg>
                   IT Staffing
                 </li>
                 <li class="about__skill">
-                  <svg class="about__skill-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <svg class="about__skill-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                     <polyline points="20 6 9 17 4 12"></polyline>
                   </svg>
                   Project Management
                 </li>
                 <li class="about__skill">
-                  <svg class="about__skill-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <svg class="about__skill-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                     <polyline points="20 6 9 17 4 12"></polyline>
                   </svg>
                   Talent Acquisition
                 </li>
                 <li class="about__skill">
-                  <svg class="about__skill-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <svg class="about__skill-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                     <polyline points="20 6 9 17 4 12"></polyline>
                   </svg>
                   Team Leadership
                 </li>
                 <li class="about__skill">
-                  <svg class="about__skill-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <svg class="about__skill-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                     <polyline points="20 6 9 17 4 12"></polyline>
                   </svg>
                   Workforce Planning
                 </li>
                 <li class="about__skill">
-                  <svg class="about__skill-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <svg class="about__skill-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                     <polyline points="20 6 9 17 4 12"></polyline>
                   </svg>
                   Client Relations
@@ -351,7 +355,7 @@
           <div class="contact__info" data-animate="fade-right">
             <div class="contact__info-item">
               <div class="contact__info-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                   <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
                   <polyline points="22,6 12,13 2,6"></polyline>
                 </svg>
@@ -364,7 +368,7 @@
 
             <div class="contact__info-item">
               <div class="contact__info-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                   <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                   <circle cx="12" cy="10" r="3"></circle>
                 </svg>
@@ -377,7 +381,7 @@
 
             <div class="contact__info-item">
               <div class="contact__info-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                   <circle cx="12" cy="12" r="10"></circle>
                   <polyline points="12 6 12 12 16 14"></polyline>
                 </svg>
@@ -391,19 +395,19 @@
             <!-- Social Links -->
             <div class="contact__social">
               <a href="#" class="contact__social-link" aria-label="GitHub">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                   <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
                 </svg>
               </a>
               <a href="#" class="contact__social-link" aria-label="LinkedIn">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                   <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
                   <rect x="2" y="9" width="4" height="12"></rect>
                   <circle cx="4" cy="4" r="2"></circle>
                 </svg>
               </a>
               <a href="#" class="contact__social-link" aria-label="Twitter">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                   <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
                 </svg>
               </a>
@@ -412,8 +416,9 @@
 
           <!-- Contact Form -->
           <form class="contact__form" id="contact-form" novalidate data-animate="fade-left" data-delay="200">
+            <p class="form__required-note"><span aria-hidden="true">*</span> Required fields</p>
             <div class="form__group">
-              <label for="name" class="form__label">Name</label>
+              <label for="name" class="form__label">Name <span class="form__required" aria-hidden="true">*</span></label>
               <input
                 type="text"
                 id="name"
@@ -427,7 +432,7 @@
             </div>
 
             <div class="form__group">
-              <label for="email" class="form__label">Email</label>
+              <label for="email" class="form__label">Email <span class="form__required" aria-hidden="true">*</span></label>
               <input
                 type="email"
                 id="email"
@@ -441,7 +446,7 @@
             </div>
 
             <div class="form__group">
-              <label for="subject" class="form__label">Subject</label>
+              <label for="subject" class="form__label">Subject <span class="form__required" aria-hidden="true">*</span></label>
               <input
                 type="text"
                 id="subject"
@@ -454,7 +459,7 @@
             </div>
 
             <div class="form__group">
-              <label for="message" class="form__label">Message</label>
+              <label for="message" class="form__label">Message <span class="form__required" aria-hidden="true">*</span></label>
               <textarea
                 id="message"
                 name="message"
@@ -469,11 +474,11 @@
             <button type="submit" class="btn btn--primary btn--full" id="submit-btn">
               <span class="btn__text">Send Message</span>
               <span class="btn__loading" aria-hidden="true">
-                <svg class="btn__spinner" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <svg class="btn__spinner" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                   <circle cx="12" cy="12" r="10" stroke-dasharray="32" stroke-dashoffset="32"></circle>
                 </svg>
               </span>
-              <svg class="btn__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <svg class="btn__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                 <line x1="22" y1="2" x2="11" y2="13"></line>
                 <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
               </svg>
@@ -485,7 +490,7 @@
         <div class="contact__success" id="contact-success" hidden>
           <div class="contact__success-content">
             <div class="contact__success-icon">
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                 <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
                 <polyline points="22 4 12 14.01 9 11.01"></polyline>
               </svg>
